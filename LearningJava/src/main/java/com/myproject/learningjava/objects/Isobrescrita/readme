@@ -1,0 +1,5 @@
+Como todas as classes herdam diretamente da super classe Object, nós podemos fazer a sobrescrita de um de seus
+métodos mais importantes, o toString(), com isso é possível alterar a saíde/retorno deste método para o valor
+que quisermos, pois por padrão é retornado nome pacote onde está a classe, um @ e o endereço de memória do objeto
+
+Este método tem sua execução feita sempre que imprimimos a variável de referência de uma classe

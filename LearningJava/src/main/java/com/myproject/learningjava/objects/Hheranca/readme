@@ -1,0 +1,22 @@
+Diferente da associação que usa o verbo "tem um/vários", a herança usa o verbo "é um"
+
+A herança nada mais é do que uma forma de representação mais precisa do mundo real dentro da computação,
+ela permite a criação de uma classe mais específica de outra classe existente, ou seja, ela tem novas propriedades
+mas também herda muitas propriedades da sua classe mãe, assim não se torna necessário repetir o código
+da classe mãe dentro da classe filha/especializada
+
+Com isso, dentro da classe filha vai ser "criado" os mesmos atributos da classe mãe, mesmo que eles não tenham
+sido diretamente escritos pelo desenvolvedor
+
+E para acessar algum método da classe mãe/super classem usa-se a palavra chave SUPER
+
+Diferença entre sobrecarga e sobrescrita de métodos: sobrecarga é o mesmo tipo de retorno e nome, mas com quantidade
+de parâmetros diferentes, sobrescrita é com a mesma quantidade de parâmetros, apenas repetindo a escrita do método e
+adicionando propriedades a mais
+
+Para classes que sejam filhas ou estejam no mesmo pacote de uma superclasse, existe o modificador de acesso PROTECTED,
+que permite acessar as propriedades privadas na classe mãe, mas apenas para as classes filhas ou do mesmo pacote
+Na UML, este modificador de acesso é representado por um #
+
+Conforme a nossa regra de negócios, todo coordenador é um professor, então ele herda não só os atributos da classe,
+mas também seus valores

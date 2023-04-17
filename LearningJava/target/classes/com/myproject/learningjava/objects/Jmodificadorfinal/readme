@@ -1,0 +1,20 @@
+Em java, o modificador FINAL possui o mesmo significado que CONST para Javascript, portanto quando uma propriedade
+tem esse modificador atribuido a ela, seu valor não pode ser o valor default de inicialização e também não será
+alterado durante a execução do código, sendo sempre uma constante
+
+Para identificá-lo, existe uma convenção: seu nome deve ser escrito completamente em letras maiúsculas, e separando
+as palavras por um underline. Exemplo: EXEMPLO_FINAL
+
+Quando é criada uma constante, ela tende a ser usada junto ao modificador STATIC
+
+Quando é passada uma variável que faz referência a um objeto como constante, essa referência nunca mudará, ou seja, o objeto
+que foi uma vez atribuido a esta variável de referência constante será sempre ligado a ela, essa variável nunca fará referência
+a outro objeto
+Isto pode ajudar a manter  um design melhor de código, onde apenas um objeto constante e estático pode ser usado em outra
+classe através da associação
+
+Quando se usa o modificador final em uma classe, você está dizendo para o java que aquela classe não deve ser extendida/herdada
+por ninguém
+
+Já nos métodos, quando se usa o modificador final eles se tornam constantes, ou seja, não podem ser sobrescritos por nenhuma
+outra classe
