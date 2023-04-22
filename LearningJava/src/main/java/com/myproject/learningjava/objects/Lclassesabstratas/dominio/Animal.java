@@ -7,6 +7,8 @@ public abstract class Animal extends Natureza{
     public Animal(int idade, String nome){
         this.idade = idade;
         this.nome = nome;
+        // chamada do método da classe abstrata, onde apenas as classes filhas o executarão pois somente elas possuem
+        // os objetos
         adicionarSobreNome();
     }
 

@@ -1,5 +1,6 @@
 package com.myproject.learningjava.objects.Lclassesabstratas.dominio;
 
+// primeira generalização da classe abstrata
 public class AnimalCachorro extends Animal{
     protected String especieAnimal;
 
@@ -8,6 +9,7 @@ public class AnimalCachorro extends Animal{
         this.especieAnimal = especieAnimal;
     }
 
+    // sobrescrita do método da classe abstrata
     @Override
     public void adicionarSobreNome() {
         super.nome = super.nome + " " + "Lourenço";
