@@ -7,7 +7,7 @@ public class Maria extends Pessoa{
 
     @Override
     public double porcentagemSalarioParaAposentadoria() {
-        for (Profissoes prof : profissoes.values()){
+        for (Profissoes prof : Profissoes.values()){
             if (!(prof.equals(Profissoes.ENEGENHEIRO)) && !(prof.equals(Profissoes.PROFESSOR))){
                 return super.salario * 0.05;
             }
