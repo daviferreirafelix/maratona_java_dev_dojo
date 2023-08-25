@@ -1,0 +1,19 @@
+Classes abstratas são classes onde as mesmas servem apenas de conceito, de um molde que será herdado por outras classes,
+portanto, elas não podem ser instanciadas e sim apenas herdadas por classes que irão extende-las
+
+Com isso, uma classe abstrata não pode ser concreta, ou seja, não pode surgir um objeto dela, somente de suas classes
+filhas. Além disso, obviamente uma classe abstrata não pode ter o modificador final, pois uma classe com esse modificador não pode ser
+uma superclasse
+
+As classes abstratas provém também os métodos abstratos, que são métodos sem um corpo preenchido, onde cada herança
+da superclasse pode sobrescrever este método conforme sua necessidade
+
+O método abstrato é útil quando todas as heranças de uma classe abstrata precisam obrigatoriamente terem um método, herdando
+ele(s) da superclasse, mas também é possível ter méotodos concretos (normais) em uma classe abstrata, podendo utilizar os dois
+modelos de métodos juntos inclusive, mas é impossível usar métodos abstratos fora de classes abstratas
+
+Quando uma classe abstrata é filha de outra superclasse também abstrata, não é obrigatório a implementação dos métodos abstratos
+desta superclasse na classe filha abstrata.
+Porém, as classes concretas que extendem a classe abstrata filha da superclasse abstrata devem implementar os métodos abstratos
+da superclasse, seja isso feito diretamente na classe concreta ou através da classe abstrata filha da superclasse abstrata,
+onde as classes concretas que extendem esta classe filha também herdam este método

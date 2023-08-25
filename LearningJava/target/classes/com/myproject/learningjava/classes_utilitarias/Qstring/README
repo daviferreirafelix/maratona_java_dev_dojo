@@ -1,0 +1,16 @@
+As strings, ao serem criadas de forma tradicional, vão para dentro do Pool(piscina) de Strings, que é um espaço dentro do heap, outro espaço em memória onde são aramzenados os objetos, e ao entrarem lá acabam por se tornar imutáveis. Portanto, deve-se ter cuidado ao atribuir um novo valor a uma string, pois a string dentro do pool não sofre alteração e sim é criada outra string com o valor da antiga mais o novo valor da alteração lá dentro do pool ou se não associada essa alteração a esta nova variavel de referencia o valor é perdido, com isso acarretando em um acréscimo no consumo de memória
+
+Alguns métodos úteis da classe String:
+	.charAt() - retorna qual o caractere no índice passado como parametro
+	.length() - retorna o tamanho da string
+	.replace() - substitui o charactere passada como parâmetro pelo outro caractere também passado no parametro
+	.toLowerCase() - transforma todos os caracteres em minusculos
+	.toUpperCase() - //         //    //    //      // maiusculos
+	.substring() - retorna todos os elementos a partir do valor do indice passado no parametro
+	.triim() - remove todos os espaços em branco tanto no começo quanto no final da string
+	
+Em questão de desempenho, as strings são horríveis em relação a grandes valores. Pra isso, foi criado a classe String Builder, que busca corrigir o baixo desempenho das mesmas, saindo de até 1084ms de execução de 30000 concatenações com as strings tradicionais para apenas 1ms ao utilizar a String Builder
+
+Ao utilizar a classe StringBuilder, as strings deixam de ser imutáveis pois StringBuilder não é uma string do tipo primitivo, portanto o StringBuilder pode fazer a alteração na string pré existente sem fazer a alocação de espaço no pool de strings
+
+Existe também uma versão do Stirng Builder voltada para multhreads, que é a StringBUffer. Basicamente são as mesmas classes com os mesmos métodos, mas a StringBuffer por se tratar de algo syncronized (veremos sobre no conteúdo de threads) é mais complexa de se executar, demorando um pouco mais de tempo.

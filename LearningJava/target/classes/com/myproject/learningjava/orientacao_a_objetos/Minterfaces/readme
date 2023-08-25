@@ -1,0 +1,20 @@
+Interfaces são semelhantes às classes abstratas, é como se fossem contratos onde as classes que herdam desta interface
+são obrigadas a implementarem suas cláusulas, ou seja, devem conter todos os métodos desta interface
+
+Na interface todos os métodos são públicos e abstratos, sendo até desnecessário escrever public e abstract na assinatura
+do método
+
+A assinatura de uma classe que implementa uma interface deve conter agora o IMPLEMENTS e não o EXTENDS, pois o extends
+é para classes abstratas
+
+Uma mesma classe pode implementar diversas interfaces, diferente de uma classe abstrata, que só pode ser extendida  por
+uma classe filha uma única vez
+
+Quando uma interface é implementada, seus métodos abstratos devem obrigatoriamente serem implementados, porém, como uma
+classe pode implementar diversas interfaces, ela sofreria com vários méotodos para serem implementados. Para solucionar,
+foi atribuído as interfaces os métodos concretos também, que não possuem a obrigatoriedade de serem implementados mas, em
+compensação, devem ser implementados/terem seu corpo escrito diretamente dentro da interface
+Um método concreto dentro de uma interface pode ser identificado com a palavra DEFAULT na assinatura dele
+
+Assim como é nas classes abstratas, a classe que implementa uma interface pode ter acesso a seus métodos concretos por
+associação, sendo possível sobrescrever este método na classe que está implementando a interface

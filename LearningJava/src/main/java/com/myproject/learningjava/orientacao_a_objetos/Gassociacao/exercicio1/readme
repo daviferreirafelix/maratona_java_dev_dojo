@@ -1,0 +1,12 @@
+Cadastre um projeto de seminário onde tenham o seminário, o aluno, o professor e o local de apresentação
+Um aluno só poderá estar em um seminário, enquanto um seminário poderá ter um ou vários alunos
+Um seminário será avaliado por um ou mais professores, enquanto um professor só pode avaliar um seminário
+O seminário terá somente 1 local para ser apresentado
+
+As associações em Java são semelhantes ao relacionamento entre entidades nas linguagens sql de banco de dados
+Existem as associações fortes, onde duas classes se relacionam diretamente entre si, com uma fazendo parte da outra, as relações
+bidimensionais
+E também existem as relações unidmensionais, onde apenas uma está está para outra, ou seja, somente uma classe faz parte da outra,
+sem uma relação forte
+Com isso, nós podemos acessar, manipular e preencher os métodos e propriedades de uma classe através da sua relação com outra
+classe
