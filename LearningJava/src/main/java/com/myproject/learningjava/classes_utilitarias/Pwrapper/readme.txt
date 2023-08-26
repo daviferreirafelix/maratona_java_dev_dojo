@@ -1,2 +1,2 @@
-Classes Wrappers são objetos que encapsulam os tipos primitivos, ou seja, transforma os antigos tipos primitivos em objetos de uma classe que extende a superclasse Number.
+Classes Wrappers são objetos que encapsulam os tipos primitivos, ou seja, transforma os antigos tipos primitivos em objetos de uma classe propria, que extende a superclasse Number.
 Foram criadas para que, ao um tipo primitivo ser passado como parâmetro para algum método, essa passagem seja por referência a um objeto e não mais por valores numéricos reais
