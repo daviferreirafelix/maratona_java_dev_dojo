@@ -1,6 +1,5 @@
 package com.myproject.learningjava.classes_utilitarias.Rdatas.test;
 
-
 import java.text.DateFormat;
 import java.util.Calendar;
 
@@ -21,6 +20,5 @@ public class DateFormatTest01 {
         for (DateFormat format: df){
             System.out.println(format.format(c.getTime()));
         }
-
     }
 }

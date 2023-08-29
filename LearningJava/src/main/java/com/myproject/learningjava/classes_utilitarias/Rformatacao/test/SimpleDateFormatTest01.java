@@ -15,9 +15,9 @@ public class SimpleDateFormatTest01 {
         // uma string normal que será impressa
 
         // buscando pais atual do local onde se encontra o computador do usuario
-        Locale locale = Locale.getDefault();
+        Locale localeDefault = Locale.getDefault();
         // atribuindo o nome do pais envolto ao local onde se encontra o PC do usuario a uma variavel
-        String country = locale.getDisplayCountry(locale);
+        String country = localeDefault.getDisplayCountry(localeDefault);
 
         String pattern = "'"+ country +",'" + " dd 'de' MMMM 'de' yyyy 'às' HH:mm:ss'.'";
 
