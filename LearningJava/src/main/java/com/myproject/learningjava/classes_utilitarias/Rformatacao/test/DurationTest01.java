@@ -7,7 +7,7 @@ public class DurationTest01 {
     public static void main(String[] args) {
         /*
         * Duration é uma classe que vem para estipular, em segundos e nanosegundos, a duração e passagem de tempo
-        * de um valor de data ou hora ao outro. Ela traz como formatação alguns símbolos, como o P, que indica
+        * de um valor em horas ao outro. Ela traz como formatação alguns símbolos, como o P, que indica
         * a duração do período de tempo do calendário, e o T, que indica a duração do período de tempo do horário
         * */
 
