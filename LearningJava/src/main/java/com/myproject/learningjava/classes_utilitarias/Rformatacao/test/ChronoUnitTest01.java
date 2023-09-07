@@ -7,8 +7,9 @@ import java.time.temporal.ChronoUnit;
 public class ChronoUnitTest01 {
     public static void main(String[] args) {
         /*
-        * ChronoUnit é a classe responsável por padronizar a formatação de unidades de data e periodo de tempo.
-        * É mais simples pegar a quantidade de dias, meses e anos pelos métodos desta classe do que pela DateTIme
+        * ChronoUnit é a classe responsável por padronizar a medição de unidades de data e periodo de tempo.
+        * É mais simples pegar a quantidade de dias, meses e anos entre datas pelos métodos desta classe do que
+        * pela DateTIme
         * */
 
         LocalDate aniversario = LocalDate.of(2000, Month.SEPTEMBER, 13);
