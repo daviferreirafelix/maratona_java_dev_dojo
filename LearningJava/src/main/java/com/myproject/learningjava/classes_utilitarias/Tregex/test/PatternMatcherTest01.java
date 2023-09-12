@@ -16,6 +16,8 @@ public class PatternMatcherTest01 {
         * cada expressão encontrada no texto corresponde a um indice. Por exemplo, a expressão "abc" foi encontrada
         * no indice 0 da String texto. Portanto, precisamos percorrer o texto como se estivessemos percorrendo
         * um array usando um laço de repetição para podermos encontrar a posição onde aparece a expressão regular.
+        * Podemos ver também o valor da expressão regular encontrada ao utilizar o método .group(), e iniciamos a
+        * contagem dos indices onde encontramos estas expressões com o método .start()
         * */
 
         String expression = "abc";
@@ -25,7 +27,7 @@ public class PatternMatcherTest01 {
         Matcher matcher = pattern.matcher(texto);
 
         while (matcher.find()){
-            System.out.print(matcher.start() + " ");
+            System.out.print(matcher.start() + " " + matcher.group() + "\n");
         }
     }
 }
