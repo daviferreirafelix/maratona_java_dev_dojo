@@ -15,8 +15,8 @@ public class ResourceBrundleTest01 {
 		 ResourceBundle resource = ResourceBundle.getBundle("message_en_US", new Locale("en", "US"));
 		 System.out.println(resource.getString("good.morning"));
 		 System.out.println("------------------------------------------------------------");
-		 //resource = ResourceBundle.getBundle("message_pt_BR", new Locale("pt", "BR"));
-		 //System.out.println(resource.getString("good.morning"));
+		 resource = ResourceBundle.getBundle("message_pt_BR", new Locale("pt", "BR"));
+		 System.out.println(resource.getString("hello"));
 		 
 	}
 
