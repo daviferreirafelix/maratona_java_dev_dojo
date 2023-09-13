@@ -9,7 +9,7 @@ public class PatternMatcherTest01 {
         * Expressões Regulares são uma linguagem que usa meta-caracteres/simbolos que se traduzem em padrões
         * de linguagem escritos num texto. Bastante utilizado para buscar padrões de escrita num texto e validações,
         * onde se tal campo, por exemplo, não for preenchido conforme determinado na expressão regular ele não é
-        * válido. Caso não seja usado um meta-caractere/seimbolo na expressão regular e sim linguagem normal, ela
+        * válido. Caso não seja usado um meta-caractere/simbolo na expressão regular e sim linguagem normal, ela
         * irá procurar exatamente os caracteres conforme passados nesta linguagem normal. Java usa duas classes para
         * trabalhar com expressões regulares: Pattern, que compila o padrão/expressão, e a Matcher, que encontra esse
         * padrão. O java trabalha para encontrar as expressões regulares com o Matcher através de índices, onde
