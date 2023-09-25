@@ -16,7 +16,7 @@ public class FileReaderTest01 {
         * faremos a leitura em palavras do conteúdo nele escrito.
         * */
 
-        File file = new File("teste2.html");
+        File file = new File("teste2.txt");
 
         try (FileWriter fr = new FileWriter(file)){
             fr.write("morango");
