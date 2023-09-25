@@ -16,12 +16,23 @@ public class FilWriterTest01 {
         * S.O.
         * */
 
-        File file = new File("teste.txt");
+        File file = new File("teste.html");
 
-        try (FileWriter fw = new FileWriter(file)){
-            fw.write("abc");
-            fw.flush();
-        } catch (IOException e) {
+        String html = "<!DOCTYPE html>\n" +
+                "<html lang=\"pt-br\">\n" +
+                "<head>\n" +
+                "\n<title>Testando</title>" +
+                "</head>\n" +
+                "<body>\n" +
+                "\n <h1>Titulo Qualquer</h1>" +
+                "</body>\n" +
+                "</html>";
+
+        try (FileWriter fr = new FileWriter(file)){
+            fr.write(html);
+            fr.flush();
+            System.out.println("Arquvio criado.");
+        } catch (IOException e){
             throw new RuntimeException(e);
         }
     }
